@@ -1,2 +1,2 @@
 echo "hello"
-Hello hello 
+echo "current date:$(date)"
