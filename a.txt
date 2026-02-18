@@ -2,3 +2,4 @@ echo "hello"
 hello hello hello
 hi hi hi 
 echo "$(date)"
+echo "current time:$(time)"
