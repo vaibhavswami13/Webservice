@@ -1,3 +1,4 @@
 echo "hello"
 echo "current date:$(date)"
 echo "yes"
+echo "print"
