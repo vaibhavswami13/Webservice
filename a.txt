@@ -26,4 +26,4 @@ systemctl status httpd --no-pager
 echo "Checking if port 80 is listening:"
 sudo netstat -tulnp | grep :80
 
-echo "Deployment finished successfully"
+echo "Deployment finished successfully."
