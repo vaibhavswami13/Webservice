@@ -1,5 +1,29 @@
-echo "hello"
-echo "current date:$(date)"
-echo "yes"
-echo "print"
-echo "print working directory:$(pwd)"
+echo "Starting deployment..."
+
+echo "Current user: $(whoami)"
+
+echo "Hostname: $(hostname)"
+
+echo "Server IP: $(hostname -I)"
+
+echo "Current directory: $(pwd)"
+
+echo "Listing files in current directory:"
+ls -ltr
+
+echo "Disk usage:"
+df -h
+
+echo "Memory usage:"
+free -m
+
+echo "Uptime:"
+uptime
+
+echo "Checking Apache status:"
+systemctl status httpd --no-pager
+
+echo "Checking if port 80 is listening:"
+sudo netstat -tulnp | grep :80
+
+echo "Deployment finished successfully."
