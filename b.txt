@@ -1,1 +1,4 @@
 echo "current working dir:$(pwd)"
+
+ls	List directory contents
+pwd	Show current directory path
