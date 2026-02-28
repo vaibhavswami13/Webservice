@@ -16,4 +16,4 @@ safe-restart: Requests a safe restart of Jenkins, waiting for existing builds to
 restart: Forces Jenkins to restart immediately.
 safe-shutdown: Puts Jenkins in quiet mode and waits for builds to finish before shutting down.
 shutdown: Immediately shuts down Jenkins.
-reload-configuration: Discards loaded data in memory and reloads everything from the file system...!!!!!!
+reload-configuration: Discards loaded data in memory and reloads everything from the file system...
