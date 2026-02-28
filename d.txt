@@ -1,0 +1,19 @@
+help [COMMAND]: Lists all available commands, or provides detailed information and options for a specific COMMAND.
+build <JOB_NAME> [OPTIONS]: Triggers a job or pipeline build.
+-p <KEY=VALUE>: Specify build parameters.
+-s: Wait for the build to complete and exit with an appropriate status code.
+-f: Follow the build's console output like tail -f.
+console <JOB_NAME> [BUILD_NUMBER] [OPTIONS]: Retrieves the console output for a specific build or the last build if no number is provided.
+who-am-i: Reports your current credentials and permissions.
+list-jobs [VIEW_NAME|FOLDER_NAME]: Displays a list of jobs in the specified view or folder (or top-level jobs if none specified).
+create-job <JOB_NAME>: Creates a new job by reading configuration XML from standard input (stdin).
+get-job <JOB_NAME>: Dumps the configuration XML for a specific job to standard output (stdout).
+update-job <JOB_NAME>: Updates an existing job definition from stdin, the opposite of get-job.
+delete-job <JOB_NAME>: Deletes a job.
+install-plugin <PLUGIN_NAME>: Installs a plugin from the update center, a file, or a URL.
+list-plugins: Lists all installed plugins and their versions.
+safe-restart: Requests a safe restart of Jenkins, waiting for existing builds to complete first.
+restart: Forces Jenkins to restart immediately.
+safe-shutdown: Puts Jenkins in quiet mode and waits for builds to finish before shutting down.
+shutdown: Immediately shuts down Jenkins.
+reload-configuration: Discards loaded data in memory and reloads everything from the file system.
